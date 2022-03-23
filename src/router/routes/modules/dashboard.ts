@@ -31,6 +31,14 @@ const dashboard: AppRouteModule = {
         title: t('routes.dashboard.workbench'),
       },
     },
+    {
+      path: 'fetchTable',
+      name: 'FetchTableDemo',
+      component: () => import('/@/views/table/FetchTable.vue'),
+      meta: {
+        title: t('routes.demo.table.fetchTable'),
+      },
+    },
   ],
 };
 
